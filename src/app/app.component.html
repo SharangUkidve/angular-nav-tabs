@@ -1,7 +1,9 @@
+<h1>Stretched</h1>
 <app-nav-tab-bar [stretchTabs]="true">
   <a appTabLink [active]="rla.isActive" *ngFor="let link of links" [routerLink]="link.routerLink"
     routerLinkActive="active" #rla="routerLinkActive">{{link.title}}</a>
 </app-nav-tab-bar>
+<h1>Normal</h1>
 <app-nav-tab-bar>
   <a appTabLink [active]="rla.isActive" *ngFor="let link of links" [routerLink]="link.routerLink"
     routerLinkActive="active" #rla="routerLinkActive">{{link.title}}</a>
