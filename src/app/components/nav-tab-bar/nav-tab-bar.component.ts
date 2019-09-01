@@ -54,7 +54,7 @@ export class NavTabBarComponent implements OnInit, AfterContentInit {
   }
 
   @HostListener('window: resize')
-  private repositionIndicator() {
+  repositionIndicator() {
     setTimeout(() => {
       const tab = this.findActiveTab();
       if (tab) {
