@@ -1,0 +1,49 @@
+nav {
+  display: flex;
+  position: relative;
+  height: 44px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-width: 100%;
+  width: max-content;
+  border-bottom: 1px solid #cccccc;
+
+  .tab-active-indicator {
+    height: 2px;
+    position: absolute;
+    bottom: -1px;
+    background-color: #4770ff;
+    transition: all 500ms;
+    width: 100%;
+  }
+
+  .tab-link {
+    display: block;
+    padding: 0 20px;
+    text-decoration: none;
+    min-width: 120px;
+    text-align: center;
+    line-height: 44px;
+    color: lighten(#4770ff, 10%);
+    outline: none;
+
+    &-stretched {
+      width: 100%;
+    }
+
+    &:focus,
+    &:active {
+      background-color: rgba($color: #000000, $alpha: 0.12);
+    }
+
+    &-active {
+      color: #4770ff;
+    }
+
+    @media only screen and (max-width: 834px) {
+      min-width: unset;
+      width: 100%;
+    }
+  }
+}

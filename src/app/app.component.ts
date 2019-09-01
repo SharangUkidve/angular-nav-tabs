@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { TabLink } from './directives/tab-link.directive';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'tabs-example';
+  links: TabLink[] = [
+    { title: 'First', routerLink: 'one' },
+    { title: 'Second', routerLink: 'two' },
+    { title: 'Third', routerLink: 'three' },
+  ];
 }
