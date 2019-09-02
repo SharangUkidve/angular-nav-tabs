@@ -61,7 +61,6 @@ export class NavTabBarComponent implements OnInit, AfterContentInit {
         this.renderer.setStyle(this.activeIndicatorRef.nativeElement, 'left', tab.offsetLeft + 'px');
         this.renderer.setStyle(this.activeIndicatorRef.nativeElement, 'width',
           (tab.clientWidth || tab.getBoundingClientRect().width) + 'px');
-        tab.blur();
       }
     }, 0);
   }
